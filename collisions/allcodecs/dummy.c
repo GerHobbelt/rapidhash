@@ -25,7 +25,7 @@
  */
 
 
-#include <dummy.h>
+#include <stdlib.h>
 
 unsigned badsum32(const void* input, size_t len, unsigned seed)
 {

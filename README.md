@@ -32,7 +32,7 @@ They do not use machine-specific vectorized or cryptographic instruction sets.
 **Excellent**  
 All functions pass all tests in both [SMHasher](https://github.com/rurban/smhasher/blob/master/doc/rapidhash.txt) and [SMHasher3](https://gitlab.com/fwojcik/smhasher3/-/blob/main/results/raw/rapidhash.txt).  
 [Collision-based study](https://github.com/Nicoshev/rapidhash/tree/master?tab=readme-ov-file#collision-based-hash-quality-study) showed a collision probability close to ideal.  
-Outstanding collision ratio when tested with datasets of 16B keys:
+Outstanding collision ratio when tested with datasets of 16B and 67B keys:
 
 | Input Len | Nb Hashes | Expected | Nb Collisions |
 | ---  | ---   | ---   | --- |
@@ -47,6 +47,16 @@ Outstanding collision ratio when tested with datasets of 16B keys:
 |   96 | 15 Gi |   7.0 |   6 |
 |  120 | 15 Gi |   7.0 |   8 |
 |  128 | 15 Gi |   7.0 |   6 |
+|   12 | 62 Gi | 120.1 | 122 |
+|   16 | 62 Gi | 120.1 |  97 |
+|   24 | 62 Gi | 120.1 | 125 |
+|   32 | 62 Gi | 120.1 | 131 |
+|   40 | 62 Gi | 120.1 | 117 |
+|   48 | 62 Gi | 120.1 | 146 |
+|   64 | 62 Gi | 120.1 | 162 |
+|   80 | 62 Gi | 120.1 | 165 |
+|   96 | 62 Gi | 120.1 | 180 |
+|  120 | 62 Gi | 120.1 | 168 |
 
 More results can be found in the [collisions folder](https://github.com/Nicoshev/rapidhash/tree/master/collisions)
 
@@ -57,7 +67,7 @@ Average latency when hashing keys of 4, 8 and 16 bytes
 
 | Hash      | M1 Pro | M3 Pro | Neoverse V2 | AMD Turin | Ryzen 9700X |
 | ---       | ---    | ---    | ---         | ---       | ---         |
-| rapidhash | 1.79ns | 1.38ns | 2.06ns      | 2.31ns    | 1.46ns      |
+| rapidhash | 1.79ns | 1.38ns | 2.05ns      | 2.31ns    | 1.46ns      |
 | xxh3      | 1.92ns | 1.50ns | 2.15ns      | 2.35ns    | 1.45ns      |
 
 Peak throughput when hashing files of 16Kb-2Mb

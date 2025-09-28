@@ -3,7 +3,7 @@ rapidhash - Very fast, high quality, platform-independent
 
 Family of three hash functions: rapidhash, rapidhashMicro and rapidhashNano
 
-Used by [Chromium](https://chromium-review.googlesource.com/c/chromium/src/+/5667077), [Folly's F14](https://github.com/facebook/folly/blob/main/folly/container/HeterogeneousAccess.h#L130), [Ninja](https://github.com/ninja-build/ninja/blob/656412538b6fc102b809a61e0efce422e5a20534/src/build_log.cc#L61), [JuliaLang](https://github.com/JuliaLang/julia/blob/309b1b158f59485772d5f5fe0a762f20185cf799/base/hashing.jl#L281), [fb303](https://github.com/facebook/fb303/blob/6c0666c96b7112be2cb5608385063f1aed19c43f/fb303/ThreadCachedServiceData.h#L461), among others
+Used by [Chromium](https://chromium-review.googlesource.com/c/chromium/src/+/5667077), [Folly's F14](https://github.com/facebook/folly/blob/main/folly/container/HeterogeneousAccess.h#L130), [Ninja](https://github.com/ninja-build/ninja/blob/656412538b6fc102b809a61e0efce422e5a20534/src/build_log.cc#L61), [JuliaLang](https://github.com/JuliaLang/julia/blob/309b1b158f59485772d5f5fe0a762f20185cf799/base/hashing.jl#L281), [ziglang](https://github.com/ziglang/zig/pull/22085), [fb303](https://github.com/facebook/fb303/blob/6c0666c96b7112be2cb5608385063f1aed19c43f/fb303/ThreadCachedServiceData.h#L461), among others
 
 **Rapidhash**  
 General purpose hash function, amazing performance across all sizes.  
@@ -100,3 +100,8 @@ Ideally, the average among measurements should be $7.03$ and the results collect
 We obtained a mean value of $7.60$, just $8.11$% over $7.03$.  
 Each dataset individual result and the collisions test program can be found in the [collisions folder](https://github.com/Nicoshev/rapidhash/tree/master/collisions).  
 The default seed $0$ was used in all experiments.
+
+Ports
+-------------------------
+[Java](https://github.com/dynatrace-oss/hash4j?tab=readme-ov-file#hash-algorithms) by hash4j  
+[Rust](https://github.com/hoxxep/rapidhash) by hoxxep    

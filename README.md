@@ -107,3 +107,4 @@ Ports
 [Rust](https://github.com/hoxxep/rapidhash) by hoxxep  
 [JavaScript](https://github.com/komiya-atsushi/rapidhash-js) by komiya-atsushi  
 [Go](https://github.com/dwisiswant0/rapidhash) by dwisiswant0  
+[C#](https://github.com/Molth/Hashing) by molth  
